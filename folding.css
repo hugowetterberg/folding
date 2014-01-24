@@ -1,0 +1,57 @@
+.folding .decorator {
+  color: #ddd;
+}
+
+.folding h1, .folding h2, .folding h3, .folding h4, .folding h5, .folding h6 {
+  cursor: pointer;
+}
+
+.folding ul.todo, ul.todo li {
+  list-style: none;
+}
+
+.folding .hidden-by-fold {
+  display: none;
+}
+
+.folding .folding-ellipsis {
+  color: #ddd;
+  display: inline-block;
+}
+
+.folding ul.todo li:before {
+  content: '☐';
+  display: inline-block;
+  margin-left: -1.2em;
+  width: 1.2em;
+}
+
+.folding ul.todo li li {
+  color: #000;
+}
+
+.folding ul.todo li.done {
+  color: #999;
+}
+
+.folding ul.todo li.done:before {
+  content: '☑';
+}
+
+.folding .folding-tag {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.folding.tag-filter .no-tag,
+.folding.tag-filter .folding-tagged {
+  display: none;
+}
+
+.folding.tag-filter .active-tag {
+  display: block;
+}
+
+.folding.tag-filter li.active-tag {
+  display: list-item;
+}

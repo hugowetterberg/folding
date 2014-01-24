@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Folding</title>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400">
+  <link rel="stylesheet" href="folding.css" type="text/css" charset="utf-8" />
+  <style type="text/css" media="screen">
+    body {
+      font-family: 'Noto Serif', serif;
+      font-size: 1.5rem;
+      line-height: 1.6em;
+      color: #3A4145;
+      padding: 1em;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <section class="post-content folding">
+    <h2 id="milestonea">Milestone A</h2>
+
+    <p id="p1">In which we learn to navigate and interact with the world.</p>
+
+    <ul id="ul1">
+    <li>Viewport scrolling @frontend</li>
+    <li>Implement sprite culling @frontend</li>
+    <li>Re-add interactives (units &amp; other clickable stuff)</li>
+    </ul>
+
+    <h3 id="frontendtodo">Frontend.todo</h3>
+
+    <ul id="ul1">
+    <li>Viewport scrolling @done</li>
+    <li>Implement sprite culling @done</li>
+    <li>Re-add interactives (units &amp; other clickable stuff) @done</li>
+    </ul>
+
+    <h3 id="gameplaytodo">Gameplay.todo</h3>
+
+    <ul id="ul2">
+    <li>Re-add unit movement @done</li>
+    </ul>
+
+    <h2 id="milestoneb">Milestone B</h2>
+
+    <p id="p2">In which two or more people can take turns to interact with the world.</p>
+
+    <h3 id="gameplaytodo">Gameplay.todo</h3>
+
+    <ul id="ul3">
+    <li>Multiple players @done</li>
+    <li>Implement turns @done</li>
+    <li>Add unit ownership @done
+    <ul><li>Only allow interaction with own units</li>
+        <li>Only allow interaction with own units @done</li></ul></li>
+    <li>Find random starting positions Find random starting positions Find random starting positions Find random starting positions @done</li>
+    <li>Track movement points @done</li>
+    <li>Don't allow movement into mountains and sea</li>
+    </ul>
+
+    <h2 id="milestonec">Milestone C</h2>
+
+    <p id="p3">In which said people start beating the crap out of each other (a natual progression of events).</p>
+
+    <h3 id="terraingenerationtodo">Terrain generation.todo</h3>
+
+    <ul id="ul4">
+    <li>Work out the hills-forest &amp; terrain-features relationship</li>
+    </ul>
+
+    <h3 id="gameplaytodo">Gameplay.todo</h3>
+
+    <ul id="ul5">
+    <li>Melee @combat</li>
+    <li>Ranged @combat</li>
+    <li>Defensive &amp; offensive terrain bonuses @combat</li>
+    <li>Bonus: Animated projectiles @combat</li>
+    <li>Bonus: Animated melee combat (bumping+fade out a la Civ I &amp; dust) @combat</li>
+    </ul>
+
+    <h2 id="milestoned">Milestone D</h2>
+
+    <p id="p4">In which constructive things also can be done.</p>
+
+    <h3 id="gameplaytodo">Gameplay.todo</h3>
+
+    <ul id="ul6">
+    <li>Worker can build roads</li>
+    <li>... and camps - protocities
+    <ul><li>Must be 8 squares apart</li>
+    <li>Production based on population &amp; terrain @economy</li>
+    <li>Food based on population &amp; terrain @economy</li>
+    <li>Growth based on food @economy</li>
+    <li>Construct buildings</li>
+    <li>Buildings enables the construction of additional &amp; units</li></ul></li>
+    <li>There must be a cap on the number of camps that can be built @economy</li>
+    <li>Unit cap based on the number of camps @economy</li>
+    <li>Defensive bonus in camps @combat</li>
+    <li>Reduced movement cost for travelling along roads</li>
+    <li>Bonus: camps evolve to villages and can support more units</li>
+    </ul>
+  </section>
+
+  <a href="https://github.com/hugowetterberg/folding"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+
+  <script type="text/javascript" charset="utf-8" src="folding.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    foldIt();
+  </script>
+</body>
+</html>
