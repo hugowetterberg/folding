@@ -18,6 +18,11 @@
     element.addEventListener('click', function detectInteractiveElements(e) {
       var match;
 
+      var topElement = e.target;
+      while (!topElement.parentElement.classList.contains('folding')) {
+        topElement = topElement.parentElement;
+      }
+
       // Tags
       if (e.target.classList.contains('folding-tag')) {
         var tag = e.target.getAttribute('data-tag');
@@ -42,9 +47,9 @@
         }
       }
       // Headlines (folding)
-      else if (match = headlineExp.exec(e.target.nodeName)) {
+      else if (match = headlineExp.exec(topElement.nodeName)) {
         e.preventDefault();
-        toggleHeadlineFolding(e.target, match);
+        toggleHeadlineFolding(topElement, match);
       }
     });
 
