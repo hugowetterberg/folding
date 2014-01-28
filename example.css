@@ -1,0 +1,48 @@
+body {
+  font-family: 'Noto Serif', serif;
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  color: #3A4145;
+  padding: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+pre,code,tt {
+  font-size: 0.9rem;
+  lone-height: 0.9em;
+  font-family: Consolas,"Liberation Mono",Courier,monospace;
+}
+
+code {
+  line-height: 1em;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+code {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
