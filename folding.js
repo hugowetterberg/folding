@@ -7,8 +7,14 @@
 
   function foldIt(elements) {
     elements = elements || document.getElementsByClassName('folding');
-    for (var i = 0; i < elements.length; i++) {
-      foldingIt(elements.item(i));
+
+    if (toString.call(elements) == '[object NodeList]') {
+      for (var i = 0; i < elements.length; i++) {
+        foldingIt(elements.item(i));
+      }
+    }
+    else {
+      foldingIt(elements);
     }
   }
   window.foldIt = foldIt;
