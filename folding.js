@@ -103,13 +103,11 @@
       tagList.push(tag);
     });
 
-    if (element.nodeName == 'LI' || element.nodeName == 'P' || headlineExp.exec(element.nodeName)) {
-      if (tagList.length) {
-        tagList.forEach(tagElement.bind(element));
-      }
-      else {
-        element.classList.add('no-tag');
-      }
+    if (tagList.length) {
+      tagList.forEach(tagElement.bind(element));
+    }
+    else {
+      element.classList.add('no-tag');
     }
   }
 
