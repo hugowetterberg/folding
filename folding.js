@@ -55,7 +55,7 @@
       // Headlines (folding)
       else if (match = headlineExp.exec(topElement.nodeName)) {
         e.preventDefault();
-        toggleHeadlineFolding(topElement, match);
+        toggleHeadlineFolding(topElement);
       }
     });
 
@@ -76,6 +76,14 @@
       }
 
       current = current.nextElementSibling;
+    }
+
+    // Find items that should be collapsed by default
+    var collapse = element.getElementsByClassName('folding-collapsed');
+    for (var i = 0; i < collapse.length; i++) {
+      if (headlineExp.exec(collapse.item(i).nodeName)) {
+        toggleHeadlineFolding(collapse.item(i));
+      }
     }
   }
 
@@ -169,7 +177,7 @@
     }
   }
 
-  function toggleHeadlineFolding(element, match) {
+  function toggleHeadlineFolding(element) {
     element.classList.toggle('folded')
     var fold = element.classList.contains('folded');
     var siblingMatch;

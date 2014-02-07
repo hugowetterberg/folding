@@ -16,3 +16,5 @@ Include "folding.js" and "folding.css". Folding.js exports one function `foldIt`
 
     // Process all elements in a node list.
     foldIt(document.getElementsByClassName('post-content'));
+
+Headlines with the class "folding-collapsed" will start out collapsed.
