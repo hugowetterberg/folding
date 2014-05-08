@@ -8,12 +8,12 @@
   function foldIt(elements) {
     elements = elements || document.getElementsByClassName('folding');
 
-    if (toString.call(elements) == '[object NodeList]') {
+    if (elements.length) {
       for (var i = 0; i < elements.length; i++) {
         foldingIt(elements.item(i));
       }
     }
-    else {
+    else if (elements.tagName) {
       foldingIt(elements);
     }
   }
